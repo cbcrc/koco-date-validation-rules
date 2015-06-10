@@ -40,4 +40,26 @@ define(['knockout', 'moment'],
             message: 'The end date must be after the start date'
         };
 
+        ko.validation.rules.dateIsBefore = {
+            validator: function(val, otherVal) {
+                if (val === null || otherVal === null) {
+                    return true;
+                }
+
+                return moment(val).isBefore(otherVal);
+            },
+            message: 'The start date must be before the end date'
+        };
+
+        ko.valdiation.rules.DateIsSame = {
+        	validator: function(val, otherVal) {
+        	    if (val === null || otherVal === null) {
+        	        return true;
+        	    }
+
+        	    return moment(val).isSame(otherVal);
+        	},
+        	message: 'The dates must be equal'
+        };
+
     });

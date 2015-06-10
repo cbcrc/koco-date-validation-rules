@@ -36,3 +36,13 @@ endDate.extend({
     dateIsAfter: self.observableContent().startDate
 });
 ```
+
+##dateIsBefore
+
+```javascript
+startDate.extend({
+    dateIsBefore: self.observableContent().endDate
+});
+```
+
+##dateIsSame
