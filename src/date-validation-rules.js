@@ -1,11 +1,10 @@
 // Copyright (c) CBC/Radio-Canada. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
-define(['knockout', 'moment', 'koco-i18next'],
-    function(ko, moment, kocoI18next) {
+define(['knockout', 'moment', 'i18next'],
+    function(ko, moment, i18n) {
         'use strict';
 
-        var i18n = kocoI18next.i18next;
         // Validates that a date is in a valid date format by
         // checking against moment. Can optionally provide the date 
         // format as a param.
@@ -25,7 +24,7 @@ define(['knockout', 'moment', 'koco-i18next'],
 
                 return isValid;
             },
-            message: i18n.t('date-validation-rules.date_format_not_valid')()
+            message: i18n.t('date-validation-rules.date_format_not_valid')
         };
 
         // Validates that a range of dates is valid by checking that
@@ -38,7 +37,7 @@ define(['knockout', 'moment', 'koco-i18next'],
 
                 return moment(val).isAfter(otherVal);
             },
-            message: i18n.t('date-validation-rules.end_date_after_start_date')()
+            message: i18n.t('date-validation-rules.end_date_after_start_date')
         };
 
         ko.validation.rules.dateIsBefore = {
@@ -49,7 +48,7 @@ define(['knockout', 'moment', 'koco-i18next'],
 
                 return moment(val).isBefore(otherVal);
             },
-            message: i18n.t('date-validation-rules.start_date_before_end_date')()
+            message: i18n.t('date-validation-rules.start_date_before_end_date')
         };
 
         ko.validation.rules.DateIsSame = {
@@ -60,7 +59,7 @@ define(['knockout', 'moment', 'koco-i18next'],
 
         	    return moment(val).isSame(otherVal);
         	},
-        	message: i18n.t('date-validation-rules.dates_equal')()
+        	message: i18n.t('date-validation-rules.dates_equal')
         };
 
     });
