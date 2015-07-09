@@ -1,0 +1,6 @@
+{
+    "date_format_not_valid": "La date n’est pas valide. Elle doit respecter le format.",
+    "end_date_after_start_date": "TK",
+    "start_date_before_end_date": "TK",
+    "dates_equal": "TK"
+}

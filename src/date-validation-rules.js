@@ -24,7 +24,7 @@ define(['knockout', 'moment', 'i18next'],
 
                 return isValid;
             },
-            message: i18n.t('date-validation-rules.date_format_not_valid')
+            message: i18n.t('koco-date-validation-rules.date_format_not_valid')
         };
 
         // Validates that a range of dates is valid by checking that
@@ -37,7 +37,7 @@ define(['knockout', 'moment', 'i18next'],
 
                 return moment(val).isAfter(otherVal);
             },
-            message: i18n.t('date-validation-rules.end_date_after_start_date')
+            message: i18n.t('koco-date-validation-rules.end_date_after_start_date')
         };
 
         ko.validation.rules.dateIsBefore = {
@@ -48,7 +48,7 @@ define(['knockout', 'moment', 'i18next'],
 
                 return moment(val).isBefore(otherVal);
             },
-            message: i18n.t('date-validation-rules.start_date_before_end_date')
+            message: i18n.t('koco-date-validation-rules.start_date_before_end_date')
         };
 
         ko.validation.rules.DateIsSame = {
@@ -59,7 +59,7 @@ define(['knockout', 'moment', 'i18next'],
 
         	    return moment(val).isSame(otherVal);
         	},
-        	message: i18n.t('date-validation-rules.dates_equal')
+        	message: i18n.t('koco-date-validation-rules.dates_equal')
         };
 
     });

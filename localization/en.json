@@ -1,0 +1,6 @@
+{
+    "date_format_not_valid": "The date format is not valid.",
+    "end_date_after_start_date": "The end date must be after the start date.",
+    "start_date_before_end_date": "The start date must be before the end date.",
+    "dates_equal": "The dates must be the same."
+}
