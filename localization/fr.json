@@ -1,6 +1,6 @@
 {
     "date_format_not_valid": "La date n’est pas valide. Elle doit respecter le format.",
-    "end_date_after_start_date": "TK",
+    "end_date_after_start_date": "La date de retrait doit être plus grande que la date de publication",
     "start_date_before_end_date": "TK",
-    "dates_equal": "TK"
+    "dates_equal": "Les dates doivent être égaux"
 }
