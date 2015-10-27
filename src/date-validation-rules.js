@@ -40,6 +40,18 @@ define(['knockout', 'moment', 'i18next'],
             message: i18n.t('koco-date-validation-rules.end_date_after_start_date')
         };
 
+        // Variation on above.
+        ko.validation.rules.dateIsSameOrAfter = {
+            validator: function(val, otherVal) {
+                if (val === null || otherVal === null) {
+                    return true;
+                }
+
+                return moment(val).isSame(otherVal) || moment(val).isAfter(otherVal);
+            },
+            message: i18n.t('koco-date-validation-rules.end_date_after_start_date')
+        };
+
         ko.validation.rules.dateIsBefore = {
             validator: function(val, otherVal) {
                 if (val === null || otherVal === null) {
