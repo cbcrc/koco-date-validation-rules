@@ -1,23 +1,23 @@
 {
-    "name": "koco-date-validation-rules",
-    "version": "0.2.3",
-    "homepage": "https://github.com/cbcrc/koco-date-validation-rules",
-    "authors": [
-        "Mark Moyes <mark.moyes@cbc.ca>"
-    ],
-    "description": "Knockout validation rules for dates",
-    "main": "src/date-validation-rules.js",
-    "keywords": [
-        "koco",
-        "knockout",
-        "validation",
-        "dates"
-    ],
-    "scripts": {
-        "build": "rm -rf dist && mkdir dist && cp -r src/* dist && rm -rf dist/*.js && babel src --out-dir dist --modules umd --presets es2015,stage-0"
-    },
-    "license": "MIT",
-    "dependencies": {
-        "moment": "~2.9.0"
-    }
+  "name": "koco-date-validation-rules",
+  "version": "1.0.0",
+  "homepage": "https://github.com/cbcrc/koco-date-validation-rules",
+  "authors": [
+    "Mark Moyes <mark.moyes@cbc.ca>"
+  ],
+  "description": "Knockout validation rules for dates",
+  "main": "src/date-validation-rules.js",
+  "keywords": [
+    "koco",
+    "knockout",
+    "validation",
+    "dates"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && mkdir dist && cp -r src/* dist && rm -rf dist/*.js && babel src --out-dir dist --modules umd --presets es2015,stage-0"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "moment": "~2.9.0"
+  }
 }
